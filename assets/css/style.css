@@ -14,3 +14,48 @@ body {
     color: rgb(255, 255, 255);
     
 }
+
+#btn-outline-ardent {
+    border: 3px solid #e47968;
+    border-radius: 5px;
+    box-shadow: 34px 34px 68px #cf6e5f,
+             -34px -34px 68px #f98471;
+}
+
+#btn-outline-ardent:hover {
+    background: linear-gradient(145deg, #cd6d5e, #f4816f);
+}
+
+/* hero section */
+.banner-image {
+    background-image: url('/bg.png');
+    background-size: cover;
+}
+
+video {
+    filter: brightness(80%);
+ }
+
+.ardent-btn {
+    color: #fff;
+    padding: 1.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(145deg, #cd6d5e, #f4816f);
+    font-weight: 600;
+}
+
+.ardent-btn:hover {
+    background: linear-gradient(145deg, #c45c4b, #e67361);
+}
+
+
+ /* crousal caption */
+ @media only screen and (min-width : 1200px) {
+    .carousel-caption
+    {
+      top: 46%;
+    }
+  }

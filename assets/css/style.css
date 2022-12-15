@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* inside sidebar nav */
+.offcanvas-body {
+    background: #e47968;
+    
+}
+
+#nav-list {
+    color: rgb(255, 255, 255);
+    
+}

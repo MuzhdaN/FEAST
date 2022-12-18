@@ -52,6 +52,28 @@ video {
 }
 
 
+ /* new codes  */
+  /* about section */
+.about-section {
+    padding: 4rem;
+  }
+
+.inner-column .sec-title hr {
+  width: 50%; 
+  margin:0 auto;
+}
+  
+  
+
+
+
+
+
+
+
+
+/* end */
+
  /* crousal caption */
  @media only screen and (min-width : 1200px) {
     .carousel-caption
@@ -59,3 +81,13 @@ video {
       top: 46%;
     }
   }
+
+  /* mobile devices */
+@media only screen and (max-width: 600px) {
+    .about-section {
+      padding: 2rem 1rem;
+    }
+  }
+
+ 
+  

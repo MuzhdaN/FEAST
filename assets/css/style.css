@@ -51,9 +51,7 @@ video {
     background: linear-gradient(145deg, #c45c4b, #e67361);
 }
 
-
- /* new codes  */
-  /* about section */
+  /* about-us section */
 .about-section {
     padding: 4rem;
   }
@@ -64,15 +62,6 @@ video {
 }
   
   
-
-
-
-
-
-
-
-
-/* end */
 
  /* crousal caption */
  @media only screen and (min-width : 1200px) {

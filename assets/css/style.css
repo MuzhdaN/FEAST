@@ -56,12 +56,74 @@ video {
     padding: 4rem;
   }
 
-.inner-column .sec-title hr {
+.sec-title hr {
   width: 50%; 
   margin:0 auto;
 }
   
-  
+/* menu */
+
+#menu .nav-pills .nav-link{
+  color: #000;
+  font-weight: 600;
+}
+
+#menu .nav-pills .nav-link.active {
+  color: #fff;
+  background: #e47968;
+  box-shadow: #e47968 3px 3px 6px 0px inset, rgba(71, 70, 70, 0.5) -3px -3px 6px 1px inset;
+}
+
+#menu .container .tab-content .price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #f4816f;
+}
+
+.menu-item {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+}
+
+.menu-item:hover,
+.member-box:hover {
+  /* box-shadow: 0 10px 40px rgba(71, 70, 70, 0.5); */
+  transition: all 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+/* team section */
+
+#team-container {
+  margin: 3rem;
+  padding: 2rem;
+  /* box-shadow: #e4786888 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.432) 0px 18px 36px -18px inset; */
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+}
+.member-info {
+  bottom: -80px;
+  left: 20px;
+  right: 20px;
+  background: #fff;
+  padding: 20px 0;
+  color: #433f39;
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.social-links a{
+  display: inline-block;
+    border: 1px solid #fff;
+    color: rgb(143, 141, 141);
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
 
  /* crousal caption */
  @media only screen and (min-width : 1200px) {

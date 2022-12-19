@@ -11,7 +11,7 @@
     <!-- Bootstrap CSS Link -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <!-- Bootstrap fontawsome Link -->
+    <!-- fontawsome Link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
     <title>FEAST</title>
 </head>
@@ -31,7 +31,7 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" id="nav-list" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" id="nav-list" aria-current="page" href="#">all</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" id="nav-list" href="#">About Us</a>
@@ -40,7 +40,7 @@
                   <a class="nav-link" id="nav-list" href="#">Menu</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" id="nav-list" href="#">Contact Us</a>
+                  <a class="nav-link" id="nav-list" href="#">drink Us</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link" id="nav-list" href="#">Reservation</a>
@@ -136,8 +136,8 @@
   <section class="about-section">
     <div class="container text-center">
       <div class="row"> 
-        <!-- col-lg-6 col-md-12 col-12 -->
-        <div class="col-lg-6 col-md-12 col-12 d-flex align-items-center">
+        <!-- text class: col-lg-6 col-md-12 col-12, img class: col -->
+        <div class="col-lg-5 d-flex align-items-center">
           <div class="inner-column">
             <div class="sec-title mb-3">
                 <h2>About Us</h2>
@@ -148,11 +148,11 @@
             We are here to serve you next level tutorial that currently in trend to match you with your expertise. Css3 transition is a learning website. where you can find many good quality content related to web development and tutorials about plugins. here we are using html, html5, css, css3, jquery & javascript along with inspirational UI design layout by professionals by using Photoshop and adobe allustrator.
           </div>
             <!-- <div class="btn-box">
-                <a href="#" class="theme-btn btn-style-one">Contact Us</a>
+                <a href="#" class="theme-btn btn-style-one">drink Us</a>
             </div> -->
         </div>
         </div>
-        <div class="col p-3 d-flex align-items-center">
+        <div class="col-lg-7 p-3 d-flex align-items-center">
           <div id="image-section" class="container">
             <div class="row g-0">
               <div class="col">
@@ -176,6 +176,295 @@
     </div>
   </section>
   <!--END About us section -->
+
+  <!-- Menu section -->
+  <section id="menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 intro-text">
+          <div class="sec-title mb-3 text-center">
+            <h2>Menu</h2>
+            <hr class="border border-danger border-2 opacity-50">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+        <!-- all dishes -->
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">All</button>
+        </li>
+        <!-- food -->
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-food-tab" data-bs-toggle="pill" data-bs-target="#pills-food" type="button" role="tab" aria-controls="pills-food" aria-selected="false">Food</button>
+        </li>
+        <!-- drink -->
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-drink-tab" data-bs-toggle="pill" data-bs-target="#pills-drink" type="button" role="tab" aria-controls="pills-drink" aria-selected="false">Drink</button>
+        </li>
+        <!-- specials -->
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-specials-tab" data-bs-toggle="pill" data-bs-target="#pills-specials" type="button" role="tab" aria-controls="pills-specials" aria-selected="false">specials</button>
+        </li>    
+      </ul>
+      <!-- all tab -->
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
+          <div class="row g-4">
+            <!-- menu items -->
+            <div class="col-lg-3 col-md-6">
+              <div class="menu-item text-center">
+                <img src="f.jpg" alt="" class="img-fluid">
+                <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
+                <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
+                <div class="price">$5.4</div>
+              </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6">
+              <div class="menu-item text-center">
+                <img src="f.jpg" alt="" class="img-fluid">
+                <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
+                <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
+                <div class="price">$5.4</div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="menu-item text-center">
+                <img src="drink2.jpg" alt="" class="img-fluid">
+                <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
+                <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
+                <div class="price">$5.4</div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="menu-item text-center">
+                <img src="dish1.jpg" alt="" class="img-fluid">
+                <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
+                <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
+                <div class="price">$5.4</div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="menu-item text-center">
+                <img src="dish2.jpg" alt="" class="img-fluid">
+                <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
+                <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
+                <div class="price">$5.4</div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="menu-item text-center">
+                <img src="special.jpg" alt="" class="img-fluid">
+                <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
+                <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
+                <div class="price">$5.4</div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="menu-item text-center">
+                <img src="drink2.jpg" alt="" class="img-fluid">
+                <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
+                <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
+                <div class="price">$5.4</div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="menu-item text-center">
+                <img src="drink1.jpg" alt="" class="img-fluid">
+                <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
+                <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
+                <div class="price">$5.4</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- food/dishes tab -->
+        <div class="tab-pane fade" id="pills-food" role="tabpanel" aria-labelledby="pills-food-tab" tabindex="0">
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+              <div class="menu-item text-center">
+                <img src="dish1.jpg" alt="" class="img-fluid">
+                <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
+                <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
+                <div class="price">$5.4</div>
+              </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6">
+              <div class="menu-item text-center">
+                <img src="f.jpg" alt="" class="img-fluid">
+                <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
+                <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
+                <div class="price">$5.4</div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="menu-item text-center">
+                <img src="dish3.jpg" alt="" class="img-fluid">
+                <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
+                <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
+                <div class="price">$5.4</div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="menu-item text-center">
+                <img src="dish1.jpg" alt="" class="img-fluid">
+                <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
+                <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
+                <div class="price">$5.4</div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="menu-item text-center">
+                <img src="dish2.jpg" alt="" class="img-fluid">
+                <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
+                <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
+                <div class="price">$5.4</div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="menu-item text-center">
+                <img src="dish4.jpg" alt="" class="img-fluid">
+                <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
+                <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
+                <div class="price">$5.4</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- dirnk tab -->
+        <div class="tab-pane fade" id="pills-drink" role="tabpanel" aria-labelledby="pills-drink-tab" tabindex="0">
+          <div class="row g-4">
+
+            <div class="col-lg-3 col-md-6">
+              <div class="menu-item text-center">
+                <img src="drink1.jpg" alt="" class="img-fluid">
+                <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
+                <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
+                <div class="price">$5.4</div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="menu-item text-center">
+                <img src="drink1.jpg" alt="" class="img-fluid">
+                <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
+                <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
+                <div class="price">$5.4</div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="menu-item text-center">
+                <img src="drink2.jpg" alt="" class="img-fluid">
+                <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
+                <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
+                <div class="price">$5.4</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-specials" role="tabpanel" aria-labelledby="pills-specials-tab" tabindex="0">
+          <div class="row g-4">
+
+            <div class="col-lg-3 col-md-6">
+              <div class="menu-item text-center">
+                <img src="special.jpg" alt="" class="img-fluid">
+                <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
+                <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
+                <div class="price">$5.4</div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="menu-item text-center">
+                <img src="special.jpg" alt="" class="img-fluid">
+                <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
+                <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
+                <div class="price">$5.4</div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="menu-item text-center">
+                <img src="special.jpg" alt="" class="img-fluid">
+                <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
+                <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
+                <div class="price">$5.4</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END Menu section -->
+
+  <section id="team">
+    <div class="container p-3">
+      <div class="row g-4 p-8 text-center justify-content-center" id="team-container">
+        <div class="section-title">
+          <h2>Meet our team</h2>
+        </div>
+        <div class="col-lg-3 col-sm-6 member-box">
+          <div class="member">
+            <img src="team1.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="member-info">
+            <h4>John David</h4>
+            <small>Assistant Cheif</small>
+            <div class="social-links">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 member-box">
+          <div class="member">
+            <img src="team1.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="member-info">
+            <h4>John David</h4>
+            <small>Assistant Cheif</small>
+            <div class="social-links">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 member-box">
+          <div class="member">
+            <img src="team1.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="member-info">
+            <h4>John David</h4>
+            <small>Assistant Cheif</small>
+            <div class="social-links">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis voluptas eligendi similique dignissimos optio quaerat recusandae tempore minima rem repellendus adipisci, deserunt iste itaque molestiae ex provident magni dolor! Blanditiis?</p>
 
 
     <!-- Bootstrap JS link -->

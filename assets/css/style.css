@@ -124,6 +124,20 @@ video {
     text-align: center;
 }
 
+/* contact us section */
+#contact-us {
+  background: rgba(198, 76, 58, 0.72);
+}
+
+.contact-content {
+  width: 423px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.09em;
+}
+
 
  /* crousal caption */
  @media only screen and (min-width : 1200px) {

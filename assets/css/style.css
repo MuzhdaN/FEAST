@@ -156,9 +156,6 @@ video {
   .about-section {
     padding: 2rem 1rem;
   }
-  .contact-content {
-    background-color: rgb(114, 109, 109);
-  }
 }
 
 @media only screen and (max-width: 994px) {

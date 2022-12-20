@@ -133,26 +133,40 @@ video {
   width: 423px;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 20px;
+  line-height: 22px;
   letter-spacing: 0.09em;
 }
 
 
+
+
+
+
  /* crousal caption */
- @media only screen and (min-width : 1200px) {
-    .carousel-caption
-    {
-      top: 46%;
-    }
+@media only screen and (min-width : 1200px) {
+  .carousel-caption
+  {
+    top: 46%;
   }
+}
 
   /* mobile devices */
 @media only screen and (max-width: 600px) {
-    .about-section {
-      padding: 2rem 1rem;
-    }
+  .about-section {
+    padding: 2rem 1rem;
   }
+  .contact-content {
+    background-color: rgb(114, 109, 109);
+  }
+}
+
+@media only screen and (max-width: 994px) {
+  .contact-content {
+    display: flex; 
+    justify-content: space-evenly;
+  }
+}
 
  
   

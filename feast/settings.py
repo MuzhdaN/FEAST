@@ -17,7 +17,7 @@ import dj_database_url
 if os.path.isfile("env.py"):
     import env
 
-DEVELOPMENT = os.environ.get('DEVELOPMENT', False)
+# DEVELOPMENT = os.environ.get('DEVELOPMENT', False)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # changed this to development and added it in above (bug)
-DEBUG = DEVELOPMENT
+DEBUG = True
 
 ALLOWED_HOSTS = ["restaurant-booking-system.herokuapp.com", "localhost"]
 

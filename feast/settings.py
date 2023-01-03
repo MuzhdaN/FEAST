@@ -28,7 +28,8 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+### changed this from true to false as H10 app bug occurs
+DEBUG = False 
 
 ALLOWED_HOSTS = ["restaurant-booking-system.herokuapp.com", "localhost"]
 

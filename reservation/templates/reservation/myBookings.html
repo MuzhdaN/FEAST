@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<h1>My bookings</h1>
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Guest</th>
+        <th scope="col">date</th>
+        <th scope="col">time</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for booking in bookings %}
+      <tr>     
+        <td> {{booking.name}} </td>
+        <td> {{booking.email}} </td>
+        <td> {{booking.phone}} </td>
+        <td> {{booking.guest}} </td>
+        <td> {{booking.date}} </td>
+        <td> {{booking.time}} </td>
+        <td>
+          <a href="/edit/"{{ booking.id }}>edit</a>
+          <a href="/delete/"{{ booking.id }}>delete</a>
+        </td>
+      </tr>
+
+      {% endfor %}
+    </tbody>
+  </table>
+
+
+{% endblock  %}
+
+

@@ -1,0 +1,27 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="/delete_booking/{{ booking.id }}" method="post">
+        
+        <p>Are you sure you want to cancel your booking?</p>
+        <p>Name: {{ booking.name }}</p>
+        <p>Table: {{ booking.date }}</p>
+        <p>Date: {{ booking.time }}</p>
+
+        {% csrf_token %}
+        <a href="/myBooking_list">NO</a>
+        <input type="submit" name="yes">
+    </form>
+
+</body>
+</html>

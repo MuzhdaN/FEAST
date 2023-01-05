@@ -1,28 +1,34 @@
-from .models import Table
-from django.shortcuts import render, HttpResponseRedirect
+from .models import *
+from django.shortcuts import render, redirect
 from django.contrib import messages
-from .forms import reserveTableForm
+from .forms import bookingForm
 
 from reservation.models import Table
 
 
 # Create your views here.
+# filling the form 
 def reserve_table(request):
-    booking_form = reserveTableForm()
+    form = bookingForm()
     
     if request.method == 'POST':
-        booking_form = reserveTableForm(request.POST)
+        form = bookingForm(request.POST)
 
-        if booking_form.is_valid():
-            booking_form.save()
-            booking_form = reserveTableForm()
+        if form.is_valid():
+            form.save()
+            form = bookingForm()
             messages.success(
                 request, "Booking succesful")
+            redirect('/myBooking_list/')
             return render(
-                # redirect to confirmation page
-                request, 'reservation/reservation.html', {'form': booking_form})       
+                request, 'reservation/myBookings.html', {'form': form})       
         else:
-            booking_form = reserveTableForm()
-            return render(request, 'reservation/reservation.html', {'form': booking_form})
-    context = {'form': booking_form}
+            form = bookingForm()
+            return render(request, 'reservation/reservation.html', {'form': form})
+    context = {'form': form}
     return render(request, 'reservation/reservation.html', context)
+
+
+def myBooking_list(request):
+    bookings = Table.objects.all()
+    return render((request), "reservation/myBookings.html", {'bookings': bookings})

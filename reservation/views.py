@@ -17,11 +17,12 @@ def reserve_table(request):
         if form.is_valid():
             form.save()
             form = bookingForm()
-            messages.success(
-                request, "Booking succesful")
-            redirect('/myBooking_list/')
-            return render(
-                request, 'reservation/myBookings.html', {'form': form})       
+            messages.success(request, "Booking succesful")
+            return redirect('/myBooking_list') 
+
+            # redirect('/myBooking_list/')
+            #will come back to form page and show success msg (Should be directed to other page)
+            # return render(request, 'reservation/myBookings.html', {'form': form})       
         else:
             form = bookingForm()
             return render(request, 'reservation/reservation.html', {'form': form})
@@ -32,3 +33,16 @@ def reserve_table(request):
 def myBooking_list(request):
     bookings = Table.objects.all()
     return render((request), "reservation/myBookings.html", {'bookings': bookings})
+
+
+def updateBookings(request, booking_id):
+    edit = Table.objects.get(id=booking_id)
+    form = bookingForm(instance=edit)   
+    if request.method == 'POST':
+        form = bookingForm(request.POST, instance=edit)
+        if form.is_valid():
+            form.save()
+            form = bookingForm()   
+            return redirect('/myBooking_list') 
+            messages.success(request, "Booking succesful")
+    return render(request, "reservation/edit_booking.html", {'form': form}) 

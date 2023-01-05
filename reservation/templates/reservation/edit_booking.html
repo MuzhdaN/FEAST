@@ -1,0 +1,32 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  {% for msg in messages %}
+  {{ msg }}
+{% endfor %}
+
+<!-- form -->
+
+<h1>Edit the booking</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur possimus accusamus saepe modi harum magni, blanditiis quam odio soluta rem minima natus molestias sapiente error fuga iste pariatur laboriosam?
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione suscipit pariatur illum repudiandae exercitationem nesciunt non iste est, autem beatae necessitatibus quis amet laudantium, blanditiis eum quas hic facere eveniet.
+</p>
+<form method="post">
+  {% csrf_token %}
+  {{form.as_p}}
+
+  
+    <button type="submit">submit</button>
+
+</form>
+</body>
+</html>

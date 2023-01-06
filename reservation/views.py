@@ -20,11 +20,10 @@ def reserve_table(request):
             messages.success(request, "Booking succesful")
             return redirect('/myBooking_list') 
 
-            # redirect('/myBooking_list/')
             #will come back to form page and show success msg (Should be directed to other page)
             # return render(request, 'reservation/myBookings.html', {'form': form})       
         else:
-            form = bookingForm()
+            # form = bookingForm()
             return render(request, 'reservation/reservation.html', {'form': form})
     context = {'form': form}
     return render(request, 'reservation/reservation.html', context)

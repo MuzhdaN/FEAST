@@ -1,16 +1,18 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load crispy_forms_filters %}
+{% load crispy_forms_tags %}
 
 {% block content %}
 
 
 
   <!-- header Image -->
-  <div class="bg-image" 
+  <!-- <div class="bg-image" 
     style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');
            height: 40vh;">
            <h1 class="text-center text-white" style="padding-top: 7rem;">Reservation</h1>
-  </div>
+  </div> -->
 
 
     {% for msg in messages %}
@@ -18,12 +20,12 @@
     {% endfor %}
 
     <!-- form -->
-  <section id="reservation" class="m-3 p-5">
+  <section id="reservation">
     
-    
-    {% comment %}
-    <form action="" method="post" class="container text-center p-5" style="background: #D67E71;">
-      {% csrf_token %}
+
+    <!-- <form action="" method="post" class="container text-center" style="background: #D67E71;">
+   
+      
       <div class="section-title text-center pb-3">
         <h3>Book a table</h3>
       </div>
@@ -58,16 +60,17 @@
           </div>
       </div>
       <button type="submit" class="btn btn-primary">Book</button>
-    </form>
-    {% endcomment %}
+    </form> -->
+    
+   
+    
 
 
-    <form action="" method="post">
+    <form action="" method="post" class="container">
       {% csrf_token %}
-      {{form}}
-
+      {{form|crispy}}
       
-        <button type="submit">submit</button>
+        <button type="submit" class="btn btn-outline-success m-3">submit</button>
     
     </form>
 

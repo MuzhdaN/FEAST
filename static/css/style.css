@@ -143,6 +143,17 @@ video {
   letter-spacing: 0.09em;
 }
 
+/* sign in / sign up design  */
+
+.autho-card {
+  border-radius: 18px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+              rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background: rgba(198, 76, 58, 0.72);
+  padding: 3rem;
+}
+
+
 /* my bookings table */
 
 #table-scroll {

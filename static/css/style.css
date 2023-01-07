@@ -5,21 +5,26 @@ body {
 }
 
 /* inside sidebar nav */
+.navbar {
+  transition: all 0.5s;
+}
+.nav-scrolled {
+  background-color: #000;
+}
+
 .offcanvas-body {
-    background: #e47968;
-    
+    background: #e47968;   
 }
 
 #nav-list {
-    color: rgb(255, 255, 255);
-    
+    color: rgb(255, 255, 255); 
 }
 
-#btn-outline-ardent {
+#btn-outline-ardent, .navbar-toggler {
     border: 3px solid #e47968;
     border-radius: 5px;
-    box-shadow: 34px 34px 68px #cf6e5f,
-             -34px -34px 68px #f98471;
+    box-shadow: 4px 3px 1px #cf6e5f,
+             -3px -3px 2px #f98471;
 }
 
 #btn-outline-ardent:hover {

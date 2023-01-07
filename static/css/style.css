@@ -138,6 +138,23 @@ video {
   letter-spacing: 0.09em;
 }
 
+/* my bookings table */
+
+#table-scroll {
+  max-height: 200px;
+  overflow: scroll;
+}
+
+/* footer */
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+}
 
 
 

@@ -1,32 +1,29 @@
-
+{% extends 'base.html' %}
 {% load static %}
+{% load crispy_forms_filters %}
+{% load crispy_forms_tags %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  {% for msg in messages %}
+
+{% block content %}
+
+{% for msg in messages %}
   {{ msg }}
 {% endfor %}
 
 <!-- form -->
+<div class="row justify-content-center g-0 mt-2 text-center">   
+  <div id="Card" class="col-11 col-md-6 col-lg-5 col-xl-4 card-welcome border border-dark border-2 rounded-4 justify-content-center">
+    <form method="post">
+      <h4 class="pb-1 pt-2">Edit your booking</h4>
+      <hr>
+      {% csrf_token %}
+      {{form.as_p}}
 
-<h1>Edit the booking</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur possimus accusamus saepe modi harum magni, blanditiis quam odio soluta rem minima natus molestias sapiente error fuga iste pariatur laboriosam?
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione suscipit pariatur illum repudiandae exercitationem nesciunt non iste est, autem beatae necessitatibus quis amet laudantium, blanditiis eum quas hic facere eveniet.
-</p>
-<form method="post">
-  {% csrf_token %}
-  {{form.as_p}}
 
-  
-    <button type="submit">submit</button>
+      <button type="submit" class="btn btn-outline-dark m-3">Done</button>
 
-</form>
-</body>
-</html>
+    </form>
+  </div>
+</div>
+
+{% endblock content %}

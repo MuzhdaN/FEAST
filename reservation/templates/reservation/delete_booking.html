@@ -1,27 +1,24 @@
+{% extends 'base.html' %}
 {% load static %}
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    <form action="/delete_booking/{{ booking.id }}" method="post">
-        
-        <p>Are you sure you want to cancel your booking?</p>
-        <p>Name: {{ booking.name }}</p>
-        <p>Table: {{ booking.date }}</p>
-        <p>Date: {{ booking.time }}</p>
+{% block content %}
 
-        {% csrf_token %}
-        <a href="/myBooking_list">NO</a>
-        <input type="submit" name="yes">
-    </form>
+ <div class="container-fluid d-flex justify-content-center align-items-center" style="height: 80vh;">
+    <div class="card text-center" id="Card">
+        <div class="card-body p-4 ">
+            <form action="/delete_booking/{{ booking.id }}" method="post">
+                {% csrf_token %}
+                <h4 class="card-title">Are you sure you want to cancel your booking?</h4>
+                <h6 class="card-text m-3">Name: {{ booking.name }}</h6>
+                <h6 class="card-text m-3">Date: {{ booking.date }}</h6>
+                <h6 class="card-text m-3">Time: {{ booking.time }}</h6>
+                <a href="/myBooking_list" class="btn btn-outline-success">NO</a>
+                <input type="submit" class="btn btn-outline-danger"  name="YES" value="YES">
+            </form>
+        </div>
+    </div>
+</div>
 
-</body>
-</html>
+{% endblock content %}
+

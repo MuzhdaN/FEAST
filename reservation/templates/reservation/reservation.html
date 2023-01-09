@@ -33,7 +33,7 @@
   </div>
   {% else %}
     <!-- form -->
-  <section id="reservation">
+  <section id="reservation" class="container m-1">
     
 
     <!-- <form action="" method="post" class="container text-center" style="background: #D67E71;">
@@ -75,15 +75,20 @@
       <button type="submit" class="btn btn-primary">Book</button>
     </form> -->
     
-
-    <form action="" method="post" class="container">
-      {% csrf_token %}
-      {{form|crispy}}
-      
-        <button type="submit" class="btn btn-outline-success m-3">submit</button>
+  <div class="row justify-content-center g-0 mb-5 text-center">
     
-    </form>
-
+    <div id="Card" class="col-11 col-md-6 col-lg-5 col-xl-4 p-0 card-welcome border border-dark border-2 rounded-4 justify-content-center">
+      <form action="" method="post" class="container p-4">
+        <h4 class="pb-1">book a table </h4>
+        <hr>
+        {% csrf_token %}
+        {{form|crispy}}
+        
+          <button type="submit" class="btn btn-outline-success m-3">Book</button>
+      
+      </form>
+    </div>
+  </div>  
 
   </section>
     

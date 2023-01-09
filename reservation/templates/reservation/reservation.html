@@ -19,6 +19,19 @@
       {{ msg }}
     {% endfor %}
 
+
+
+  {% if not user.is_authenticated %}
+  <div class="container-fluid d-flex justify-content-center align-items-center" style="height: 80vh;">
+      <div class="card text-center" id="Card">
+        <div class="card-body p-4 text-white">
+          <h4 class="card-title">Please Login First</h4>
+          <h6 class="card-subtitle m-3">You can't reserve a table without login!</h6>
+          <a href="{% url 'account_login' %}" class="btn btn-outline-dark">Go to Login Page</a>
+        </div>
+      </div>
+  </div>
+  {% else %}
     <!-- form -->
   <section id="reservation">
     
@@ -62,9 +75,6 @@
       <button type="submit" class="btn btn-primary">Book</button>
     </form> -->
     
-   
-    
-
 
     <form action="" method="post" class="container">
       {% csrf_token %}
@@ -77,7 +87,7 @@
 
   </section>
     
-
+`{% endif %}
     
 
     

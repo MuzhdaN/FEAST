@@ -2,7 +2,21 @@
 {% load static %}
 
 {% block content %}
+
+{% if not user.is_authenticated %}
+<div class="container-fluid d-flex justify-content-center align-items-center" style="height: 80vh;">
+  <div class="card text-center" id="Card">
+    <div class="card-body p-4 text-white">
+      <h4 class="card-title">Please Login First</h4>
+      <h6 class="card-subtitle m-3">You can't see your booking list without login!</h6>
+      <a href="{% url 'account_login' %}" class="btn btn-outline-dark">Go to Login Page</a>
+    </div>
+  </div>
+</div>
+
+{% else %}
 <div class="container-fluid mb-3 p-1">
+  {% if user.is_authenticated %}
   <h2 class="text-center pt-3"> My Bookings</h2> 
   <hr class="border border-danger border-2 opacity-40">
   <div id="table-scroll" class="table-responsive text-center h-100">
@@ -38,5 +52,7 @@
     </table>
   </div>
 </div>
+{% endif %}
+{% endif %}
 {% endblock content %}
 

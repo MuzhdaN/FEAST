@@ -2,40 +2,41 @@
 {% load static %}
 
 {% block content %}
-<div id="table-scroll" class="table-responsive text-center h-100" >
-  <table class="table">
-    <thead>
-        <tr>
-          <th scope="col">Name</th>
-          <th scope="col">Email</th>
-          <th scope="col">Phone</th>
-          <th scope="col">Guest</th>
-          <th scope="col">date</th>
-          <th scope="col">time</th>
+<div class="container-fluid mb-3 p-1">
+  <h2 class="text-center pt-3"> My Bookings</h2> 
+  <hr class="border border-danger border-2 opacity-40">
+  <div id="table-scroll" class="table-responsive text-center h-100">
+    <table class="table table-hover table-bordered border border-3">
+      <thead class="fixed-thead table-dark">
+          <tr>
+            <th class="th-header" scope="col">Name</th>
+            <th class="th-header" scope="col">Guest</th>
+            <th class="th-header" scope="col">Date</th>
+            <th class="th-header" scope="col">Time</th>
+            <th class="th-header" scope="col"></th>
+          </tr>
+      </thead>
+      <tbody>
+          {% for booking in bookings %}
+        <tr>     
+          <td> {{booking.name}} </td>
+          <td> {{booking.guest}} </td>
+          <td> {{booking.date}} </td>
+          <td> {{booking.time}} </td>
+          <td>
+            <a href="/update_bookings/{{ booking.id }}" class="text-decoration-none"> 
+              <button class="btn btn-sm btn-primary edit-btn"> Edit </button>
+            </a>
+            <a href="/delete_booking/{{ booking.id }}" class="text-decoration-none"> 
+              <button class="btn btn-sm btn-danger"> Delete </button>
+            </a> 
+          </td>
         </tr>
-    </thead>
-    <tbody>
-        {% for booking in bookings %}
-      <tr>     
-        <td> {{booking.name}} </td>
-        <td> {{booking.email}} </td>
-        <td> {{booking.phone}} </td>
-        <td> {{booking.guest}} </td>
-        <td> {{booking.date}} </td>
-        <td> {{booking.time}} </td>
-        <td>
-          <a href="/update_bookings/{{ booking.id }}"> 
-              <button>edit</button>
-          </a> 
-          <a href="/delete_booking/{{ booking.id }}"> 
-            <button>delete</button>
-          </a> 
-        </td>
-      </tr>
 
-      {% endfor %}
+        {% endfor %}
       </tbody>
-  </table>
+    </table>
+  </div>
 </div>
 {% endblock content %}
 

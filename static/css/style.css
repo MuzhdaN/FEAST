@@ -157,8 +157,17 @@ video {
 /* my bookings table */
 
 #table-scroll {
-  max-height: 200px;
+  max-height: 60vh;
   overflow: scroll;
+}
+
+.btn:hover {
+  font-size: 1rem;
+}
+
+.fixed-thead, .th-header{
+  position: sticky;
+  top: 0;
 }
 
 /* footer */
@@ -191,12 +200,16 @@ video {
   }
 }
 
+@media only screen and (max-width: 492px) {
+  .edit-btn {
+    margin-bottom: 0.3rem;
+  }
+}
+
 @media only screen and (max-width: 994px) {
   .contact-content {
     display: flex; 
     justify-content: space-evenly;
   }
 }
-
- 
   

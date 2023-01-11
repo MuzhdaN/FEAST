@@ -25,7 +25,7 @@
     <!----- NAVBAR ----->
     <nav class="navbar navbar-dark shadow-lg p-3" style="background-color: #e47868d6;">
       <div class="container-fluid">
-        <button class="navbar-toggler btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <button class="navbar-toggler btn btn-outline-dark" data-bs-scroll="flase" data-bs-backdrop="false" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -36,13 +36,13 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link" id="nav-list" href="">Home</a>
+                <a class="nav-link" id="nav-list" href="{% url 'home:home' %}">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="nav-list">About Us</a>
+                <a class="nav-link" id="nav-list" href="{% url 'home:home' %}#about">About Us</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" id="nav-list" href="#">Menu</a>
+                  <a class="nav-link" id="nav-list" href="{% url 'home:home' %}#menu">Menu</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link" id="nav-list" href="{% url 'reservation:myBooking_list' %}">My Bookings</a>
@@ -144,6 +144,17 @@
             let alert = new bootstrap.Alert(messages);
             alert.close();
         }, 2500);
+
+
+    document.addEventListener("DOMContentLoaded", function(){
+    var myOffcanvas = document.getElementById('offcanvasNavbar');
+    var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas);
+    document.getElementById("OpenMenu").addEventListener('click',function (e){
+      e.preventDefault();
+      e.stopPropagation();
+      bsOffcanvas.toggle();
+    });
+    });
   </script>
 </body>
 </html>

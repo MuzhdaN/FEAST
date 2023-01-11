@@ -18,7 +18,7 @@ import dj_database_url
 if os.path.isfile("env.py"):
     import env
 
-DEVELOPMENT = os.environ.get('DEVELOPMENT', False)
+# DEVELOPMENT = os.environ.get('DEVELOPMENT', False)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent

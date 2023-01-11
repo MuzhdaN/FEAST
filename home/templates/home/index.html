@@ -108,15 +108,12 @@
         </div>
       </div>
     </div>
+
     <div class="container">
       <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
-        <!-- all dishes -->
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">All</button>
-        </li>
         <!-- food -->
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-food-tab" data-bs-toggle="pill" data-bs-target="#pills-food" type="button" role="tab" aria-controls="pills-food" aria-selected="false">Food</button>
+          <button class="nav-link active" id="pills-food-tab" data-bs-toggle="pill" data-bs-target="#pills-food" type="button" role="tab" aria-controls="pills-food" aria-selected="false">Food</button>
         </li>
         <!-- drink -->
         <li class="nav-item" role="presentation">
@@ -127,90 +124,14 @@
           <button class="nav-link" id="pills-specials-tab" data-bs-toggle="pill" data-bs-target="#pills-specials" type="button" role="tab" aria-controls="pills-specials" aria-selected="false">specials</button>
         </li>    
       </ul>
-      <!-- all tab -->
+
       <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
-          <div class="row g-4">
-            <!-- menu items -->
-            <div class="col-lg-3 col-md-6">
-              <div class="menu-item text-center">
-                <img src="dish3.jpg" alt="" class="img-fluid">
-                <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
-                <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
-                <div class="price">$5.4</div>
-              </div>
-            </div>
-            
-            <div class="col-lg-3 col-md-6">
-              <div class="menu-item text-center">
-                <img src="dish3.jpg" alt="" class="img-fluid">
-                <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
-                <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
-                <div class="price">$5.4</div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-              <div class="menu-item text-center">
-                <img src="drink2.jpg" alt="" class="img-fluid">
-                <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
-                <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
-                <div class="price">$5.4</div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-              <div class="menu-item text-center">
-                <img src="dish3.jpg" alt="" class="img-fluid">
-                <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
-                <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
-                <div class="price">$5.4</div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-              <div class="menu-item text-center">
-                <img src="dish3.jpg" alt="" class="img-fluid">
-                <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
-                <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
-                <div class="price">$5.4</div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-              <div class="menu-item text-center">
-                <img src="special.jpg" alt="" class="img-fluid">
-                <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
-                <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
-                <div class="price">$5.4</div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-              <div class="menu-item text-center">
-                <img src="drink2.jpg" alt="" class="img-fluid">
-                <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
-                <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
-                <div class="price">$5.4</div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-              <div class="menu-item text-center">
-                <img src="drink2.jpg" alt="" class="img-fluid">
-                <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
-                <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
-                <div class="price">$5.4</div>
-              </div>
-            </div>
-          </div>
-        </div>
         <!-- food/dishes tab -->
-        <div class="tab-pane fade" id="pills-food" role="tabpanel" aria-labelledby="pills-food-tab" tabindex="0">
+        <div class="tab-pane fade show active" id="pills-food" role="tabpanel" aria-labelledby="pills-food-tab" tabindex="0">
           <div class="row g-4">
             <div class="col-lg-3 col-md-6">
               <div class="menu-item text-center">
-                <img src="dish3.jpg" alt="" class="img-fluid">
+                <img src="{% static 'images/dish1.webp' %}" alt="a bowl of salad with fries" class="img-fluid">
                 <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
                 <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
                 <div class="price">$5.4</div>
@@ -219,7 +140,7 @@
             
             <div class="col-lg-3 col-md-6">
               <div class="menu-item text-center">
-                <img src="dish3.jpg" alt="" class="img-fluid">
+                <img src="{% static 'images/dish3.webp' %}" alt="a bowl of tacos with salad" class="img-fluid">
                 <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
                 <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
                 <div class="price">$5.4</div>
@@ -228,7 +149,7 @@
 
             <div class="col-lg-3 col-md-6">
               <div class="menu-item text-center">
-                <img src="dish3.jpg" alt="" class="img-fluid">
+                <img src="{% static 'images/dish7.webp' %}" alt="sandwiches in a plate" class="img-fluid">
                 <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
                 <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
                 <div class="price">$5.4</div>
@@ -237,7 +158,7 @@
 
             <div class="col-lg-3 col-md-6">
               <div class="menu-item text-center">
-                <img src="dish3.jpg" alt="" class="img-fluid">
+                <img src="{% static 'images/dish6.webp' %}" alt="sushi with a glass of tea" class="img-fluid">
                 <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
                 <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
                 <div class="price">$5.4</div>
@@ -246,7 +167,7 @@
 
             <div class="col-lg-3 col-md-6">
               <div class="menu-item text-center">
-                <img src="dish3.jpg" alt="" class="img-fluid">
+                <img src="{% static 'images/dish5.webp' %}" alt="a plate of spaghetti" class="img-fluid">
                 <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
                 <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
                 <div class="price">$5.4</div>
@@ -255,7 +176,7 @@
 
             <div class="col-lg-3 col-md-6">
               <div class="menu-item text-center">
-                <img src="dish3.jpg" alt="" class="img-fluid">
+                <img src="{% static 'images/dish4.webp' %}" alt="pizza" class="img-fluid">
                 <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
                 <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
                 <div class="price">$5.4</div>
@@ -269,7 +190,7 @@
 
             <div class="col-lg-3 col-md-6">
               <div class="menu-item text-center">
-                <img src="drink2.jpg" alt="" class="img-fluid">
+                <img src="{% static 'images/drink1.webp' %}" alt="a glass of orange juice" class="img-fluid">
                 <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
                 <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
                 <div class="price">$5.4</div>
@@ -278,7 +199,7 @@
 
             <div class="col-lg-3 col-md-6">
               <div class="menu-item text-center">
-                <img src="drink2.jpg" alt="" class="img-fluid">
+                <img src="{% static 'images/drink3.webp' %}" alt="a glass full of ice and starwberry jusice" class="img-fluid">
                 <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
                 <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
                 <div class="price">$5.4</div>
@@ -287,7 +208,7 @@
 
             <div class="col-lg-3 col-md-6">
               <div class="menu-item text-center">
-                <img src="drink2.jpg" alt="" class="img-fluid">
+                <img src="{% static 'images/drink2.webp' %}" alt="a glass of lemon juice" class="img-fluid">
                 <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
                 <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
                 <div class="price">$5.4</div>
@@ -300,7 +221,7 @@
 
             <div class="col-lg-3 col-md-6">
               <div class="menu-item text-center">
-                <img src="special.jpg" alt="" class="img-fluid">
+                <img src="{% static 'images/dish4.webp' %}" alt="an italian pizza" class="img-fluid">
                 <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
                 <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
                 <div class="price">$5.4</div>
@@ -309,7 +230,7 @@
 
             <div class="col-lg-3 col-md-6">
               <div class="menu-item text-center">
-                <img src="special.jpg" alt="" class="img-fluid">
+                <img src="{% static 'images/dish1.webp' %}" alt="a salad bowl" class="img-fluid">
                 <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
                 <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
                 <div class="price">$5.4</div>
@@ -318,7 +239,7 @@
 
             <div class="col-lg-3 col-md-6">
               <div class="menu-item text-center">
-                <img src="special.jpg" alt="" class="img-fluid">
+                <img src="{% static 'images/specials2.webp' %}" alt="some pieces of sushi in plate" class="img-fluid">
                 <h5 class="mb-2 mt-1 fw-semibold">Baked potato</h5>
                 <small class="text-muted">a baked potato with Chow mein, sour cream, taco seasoning mix, avocado, french</small>
                 <div class="price">$5.4</div>
@@ -331,65 +252,13 @@
   </section>
   <!-- END Menu section -->
 
-  <section id="team">
-    <div class="container p-3">
-      <div class="row g-4 p-8 text-center justify-content-center" id="team-container">
-        <div class="section-title">
-          <h2>Meet our team</h2>
-          <hr class="border border-danger border-2 opacity-50">
-        </div>
-        <div class="col-lg-3 col-sm-6 member-box">
-          <div class="member">
-            <img src="{% static 'images/team1.jpg' %}" alt="" class="img-fluid">
-          </div>
-          <div class="member-info">
-            <h4>John David</h4>
-            <small>Assistant Cheif</small>
-            <div class="social-links">
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 member-box">
-          <div class="member">
-            <img src="{% static 'images/team1.jpg' %}" alt="" class="img-fluid">
-          </div>
-          <div class="member-info">
-            <h4>John David</h4>
-            <small>Assistant Cheif</small>
-            <div class="social-links">
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 member-box">
-          <div class="member">
-            <img src="{% static 'images/team1.jpg' %}" alt="" class="img-fluid">
-          </div>
-          <div class="member-info">
-            <h4>John David</h4>
-            <small>Assistant Cheif</small>
-            <div class="social-links">
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Customer review section -->
-  <section id="review" style="background: rgba(232, 228, 228, 0.901); padding: 3rem;">
-    <div id="carouselExampleControls" class="carousel slide text-center carousel-dark" data-bs-ride="carousel">
+    <!-- Customer review section -->
+  <section id="review">
+    <div id="carouselExampleControls" class="carousel slide text-center carousel-dark p-1 pt-3" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="rounded-circle shadow-1-strong mb-4" src="avatar4.png" alt="avatar" style="width: 150px;" />
+          <img class="rounded-circle shadow-1-strong mb-4" src="{% static 'images/avatar1.png' %}" alt="avatar" style="width: 150px;" />
             <div class="row d-flex justify-content-center">
               <div class="col-lg-8">
                 <h5 class="mb-3">Par Dave</h5>
@@ -411,7 +280,7 @@
             </ul>
         </div>
         <div class="carousel-item">
-            <img class="rounded-circle shadow-1-strong mb-4" src="team1.jpg" alt="avatar" style="width: 150px;" />
+            <img class="rounded-circle shadow-1-strong mb-4" src="{% static 'images/team1.jpg' %}" alt="avatar" style="width: 150px;" />
             <div class="row d-flex justify-content-center">
               <div class="col-lg-8">
                 <h5 class="mb-3">James Robert</h5>
@@ -433,7 +302,7 @@
             </ul>
         </div>
         <div class="carousel-item">
-            <img class="rounded-circle shadow-1-strong mb-4" src="avatar4.png" alt="avatar" style="width: 150px;" />
+            <img class="rounded-circle shadow-1-strong mb-4" src="{% static 'images/avatar1.png' %}" alt="avatar" style="width: 150px;" />
             <div class="row d-flex justify-content-center">
               <div class="col-lg-8">
                 <h5 class="mb-3">Anna Deynah</h5>
@@ -465,6 +334,59 @@
     </div>
   </section>
    <!-- END Customer review section -->
+
+  <section id="team">
+    <div class="container p-3">
+      <div class="row g-4 p-8 text-center justify-content-center" id="team-container">
+        <div class="section-title">
+          <h2>Meet our team</h2>
+          <hr class="border border-danger border-2 opacity-50">
+        </div>
+        <div class="col-lg-3 col-sm-6 member-box">
+          <div class="member">
+            <img src="{% static 'images/team1.jpg' %}" alt="a cheif standing in a corridor of kitchen" class="img-fluid">
+          </div>
+          <div class="member-info">
+            <h4>John David</h4>
+            <small>Assistant Cheif</small>
+            <div class="social-links">
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 member-box">
+          <div class="member">
+            <img src="{% static 'images/team1.jpg' %}" alt="a cheif standing in a corridor of kitchen" class="img-fluid">
+          </div>
+          <div class="member-info">
+            <h4>John David</h4>
+            <small>Assistant Cheif</small>
+            <div class="social-links">
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 member-box">
+          <div class="member">
+            <img src="{% static 'images/team1.jpg' %}" alt="a cheif standing in a corridor of kitchen" class="img-fluid">
+          </div>
+          <div class="member-info">
+            <h4>John David</h4>
+            <small>Assistant Cheif</small>
+            <div class="social-links">
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 <!-- contact us section -->
   <section id="contact-us" style="margin: 3rem;">

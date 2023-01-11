@@ -1,8 +1,9 @@
 from .models import *
 from django.shortcuts import render, redirect
 from django.contrib import messages
-from .forms import bookingForm
+from django.contrib.auth.models import User
 
+from .forms import bookingForm
 from reservation.models import Table
 
 
@@ -13,25 +14,24 @@ def reserve_table(request):
     
     if request.method == 'POST':
         form = bookingForm(request.POST)
-
         if form.is_valid():
+            form.instance.user = request.user
             form.save()
             form = bookingForm()
             messages.success(request, "Booking succesful")
-            return redirect('/myBooking_list') 
-
-            #will come back to form page and show success msg (Should be directed to other page)
-            # return render(request, 'reservation/myBookings.html', {'form': form})       
+            return redirect('/myBooking_list')      
         else:
-            # form = bookingForm()
+            form = bookingForm()
             return render(request, 'reservation/reservation.html', {'form': form})
     context = {'form': form}
     return render(request, 'reservation/reservation.html', context)
 
 
 def myBooking_list(request):
-    bookings = Table.objects.all()
-    return render((request), "reservation/myBookings.html", {'bookings': bookings})
+    # if request.user.is_authenticated:
+    bookings = Table.objects.filter(user=request.user)
+    context = {'bookings': bookings}
+    return render(request, "reservation/myBookings.html", context)
 
 
 # this function will edit/update the bookings of the user
@@ -56,5 +56,3 @@ def deleteBooking(request, booking_id):
         return redirect('/myBooking_list')
    
     return render(request, "reservation/delete_booking.html", {'booking': booking}) 
-    
-

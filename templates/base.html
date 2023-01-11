@@ -22,7 +22,6 @@
 </head>
 <body>
   <header>
-    
     <!----- NAVBAR ----->
     <nav class="navbar navbar-dark shadow-lg p-3" style="background-color: #e47868d6;">
       <div class="container-fluid">
@@ -37,7 +36,7 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link" id="nav-list" href="#s">Home</a>
+                <a class="nav-link" id="nav-list" href="">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" id="nav-list">About Us</a>
@@ -52,10 +51,6 @@
                   <a class="nav-link" id="nav-list" href="{% url 'reservation:reserve_table' %}">Reservation</a>
               </li>
             </ul>
-            <!-- <form class="d-flex mt-3" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-dark" type="submit">Search</button>
-            </form> -->
           </div>
         </div>
         <!-- LOGO Name -->
@@ -79,7 +74,7 @@
     <!-- End Navbar -->
   </header>
 
-
+<!-- toast message -->
 <div class="container">
     <div class="row">
         <div class="col-md-8 offset-md-2">
@@ -102,28 +97,24 @@
   </body>
 
 
+  
 <!-- Footer -->
   <footer class=" bg-dark text-center text-white fixed-bottom">
-    <!-- Grid container -->
-    <div class="row p-1 pb-0">
-      <!-- Section: Social media -->
+    <div class="row pb-0">
+      <!-- social media -->
       <div class="col">
-        <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-        <!-- Twitter -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" role="button"
-          ><i class="fab fa-twitter"></i
-        ></a>
-        <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button"
-          ><i class="fab fa-instagram"></i
-        ></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" role="button">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button">
+          <i class="fab fa-instagram"></i>
+        </a>
           </div>
-      <!-- Section: Social media -->
       <div class="col justify-content-end">
-        <p> </p><p>© 2023 Copyright</p> 
+        <p>© 2023 Copyright</p> 
       </div>
     </div>
   </footer> 
@@ -133,6 +124,7 @@
     <!-- Bootstrap JS link -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   
+  <!-- JS -->
   <script>
     // Navbar will change its color after scrolling
     const navScroll = document.querySelector('.navbar');

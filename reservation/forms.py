@@ -7,7 +7,6 @@ from django.core.validators import RegexValidator
 from django.core.validators import MaxValueValidator, MinValueValidator
 
 
-
 class bookingForm(forms.ModelForm):
 
     # Validations
@@ -31,7 +30,7 @@ class bookingForm(forms.ModelForm):
             MaxValueValidator(10),
             MinValueValidator(1)
         ],
-        help_text ="max number of guests you can invite is 10.",
+        # help_text ="max number of guests you can invite is 10.",
         widget=forms.TextInput(
             attrs={'placeholder': 'Number of Guests?'}),
     )
@@ -41,5 +40,10 @@ class bookingForm(forms.ModelForm):
     
     class Meta:
         model = Table
-        fields = '__all__'
-        
+        fields = (
+            'name',
+            'email',
+            'guest',
+            'date',
+            'time')
+            

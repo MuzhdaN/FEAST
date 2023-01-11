@@ -31,11 +31,12 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# changed this to development and added it in above (bug)
-DEBUG = True
+
+DEBUG = False
 
 ALLOWED_HOSTS = ["restaurant-booking-system.herokuapp.com", "localhost"]
 
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 # Application definition
 

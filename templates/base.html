@@ -37,13 +37,16 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link" id="nav-list" href="#">About Us</a>
+                <a class="nav-link" id="nav-list" href="#s">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="nav-list">About Us</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link" id="nav-list" href="#">Menu</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" id="nav-list" href="#">drink Us</a>
+                  <a class="nav-link" id="nav-list" href="{% url 'reservation:myBooking_list' %}">My Bookings</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link" id="nav-list" href="{% url 'reservation:reserve_table' %}">Reservation</a>
@@ -77,6 +80,21 @@
   </header>
 
 
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            {% for message in messages %}
+            <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
+                {{ message | safe }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+
+
   <body class="flex-shrink-0 main-bg">
     {% block content %}
       <!-- Content Goes here -->
@@ -91,15 +109,15 @@
       <!-- Section: Social media -->
       <div class="col">
         <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button"
           ><i class="fab fa-facebook-f"></i
         ></a>
         <!-- Twitter -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" role="button"
           ><i class="fab fa-twitter"></i
         ></a>
         <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button"
           ><i class="fab fa-instagram"></i
         ></a>
           </div>
@@ -127,6 +145,13 @@
         navScroll.classList.remove('nav-scrolled')
       }
     });
+
+    // Message timeout 
+    setTimeout(function () {
+            let messages = document.getElementById('msg');
+            let alert = new bootstrap.Alert(messages);
+            alert.close();
+        }, 2500);
   </script>
 </body>
 </html>

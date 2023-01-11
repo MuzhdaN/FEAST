@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = 'DEVELOPMENT'
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ["restaurant-booking-system.herokuapp.com", "localhost"]
 

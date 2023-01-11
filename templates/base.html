@@ -25,7 +25,7 @@
     <!----- NAVBAR ----->
     <nav class="navbar navbar-dark shadow-lg p-3" style="background-color: #e47868d6;">
       <div class="container-fluid">
-        <button class="navbar-toggler btn btn-outline-dark" data-bs-scroll="flase" data-bs-backdrop="false" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <button class="navbar-toggler btn btn-outline-dark" type="button" id="OpenMenu">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -145,6 +145,10 @@
             alert.close();
         }, 2500);
 
+
+    /* -- following code has been taken from stackoverflow and altered --
+    with following function, after clicking a navbar item(section) 
+    and closing the offcanvas, it will position at that section */
 
     document.addEventListener("DOMContentLoaded", function(){
     var myOffcanvas = document.getElementById('offcanvasNavbar');

@@ -2,16 +2,15 @@ from .models import *
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.models import User
+from django.contrib.auth.decorators import login_required
 
 from .forms import bookingForm
 from reservation.models import Table
 
 
 # Create your views here.
-# filling the form 
 def reserve_table(request):
-    form = bookingForm()
-    
+    form = bookingForm() 
     if request.method == 'POST':
         form = bookingForm(request.POST)
         if form.is_valid():
@@ -27,6 +26,7 @@ def reserve_table(request):
     return render(request, 'reservation/reservation.html', context)
 
 
+@login_required
 def myBooking_list(request):
     # if request.user.is_authenticated:
     bookings = Table.objects.filter(user=request.user)

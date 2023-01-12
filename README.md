@@ -1,6 +1,6 @@
-# FEAST
+# **FEAST**
 
-## Purpose of the project
+### **Purpose of the project**
 Feast is a restaurant for an online booking system. Using this website the user can reserve a table for maximum 10 guests in a particular date and time. The user can reserve several tables. Furthermore, the user needs to register to be able to reserve the table or check her bookings. The user can also edit her booking or cancel it. Also the user can not reserve a table with the same email twice as for the next update of the website, a confirmation email will be sent to the user for the her booking.
 
  
@@ -22,7 +22,7 @@ Visit the live website [in here](https://restaurant-booking-system.herokuapp.com
     * [Database Design](#database-design)
   *  [Testing](#testing)
       * [code validation](#code-validation)
-      * [test cases](#supported-screens-and-browsers)
+      * [test cases](#test-cases)
       * [Bugs](#bugs😶)
       * [supported screens and browsers](#supported-screens-and-browsers)
   * [Technolgies](#technolgies)
@@ -30,7 +30,7 @@ Visit the live website [in here](https://restaurant-booking-system.herokuapp.com
   *  [Credits](#credits)
 
 
-## Agile planning
+## **Agile planning**
  --- 
 The Agile method was used to plan, work and deploy this project. The whole process was shown in Kaban Board project through github <a href="https://github.com/users/MuzhdaN/projects/2" target="_blank">Kaban Board</a>
 
@@ -41,14 +41,14 @@ The issues section in github was used to add user stories. Accordingly lables fo
 
 There were four milestones for this project. It should be noted that the developered weren't able to finish the assigned tasks within the specific time frame of the milestone which should be noted for the future projects. 
 
-## Users
+### **Users**
 We were able to identify the following users:
     1. Visiting user
     2. Registered user
     3. Admin
     4. Site owner
     
-## Epics
+### **Epics**
 ### Epic 1 Project Setup
 The developer set up the basics of the projects. As the Django was a new lanaguage for the developer, it needed insitalliation and setup, without this epic the other parts of the projects wouldn't have worked. Also automatic Admin interface was creaded. 
 
@@ -112,26 +112,27 @@ The follwoing user stories are categorized based on the users.
 
 ##### Back to [top](#table-of-contents)
 
-## Features
+## **Features**
  --- 
-### Home page
+### **Home page**
 <details>
 <summary>Click to see home page sections</summary>
 
-#### Navigation bar (navbar)
+#### **Navigation bar (navbar)**
 The navbar is consist of login, logout buttons and humburger menu. Inside the humburger menu, there are links for Homepage, About, Menu, Reviews and contact us sections. Also it has Reservation and Bookings list page links.
+
  ![Navbar Image](static/readme_images/navbar.PNG)
 
-#### Crousal Wrapper 
+#### **Crousal Wrapper** 
 In the homepage after navbar, we have crousal wrapper section, where the user can see the videos of the restaurant and it's mottos. 
 In the first crousal item, there is a reserve button so the user could have easy access to it. Also, the first crousal item won't change untill the user change it so the user would be able to click the reserve button. 
  ![crousal-wrapper Image](static/readme_images/wrapper.PNG)
 
-#### About us section
+#### **About us section**
 In this section of the homepage there is a short information about restaurant and next to that some images of the restaurant are in display.
 ![About-us-section Image](static/readme_images/about.PNG)
 
-#### Menu
+#### **Menu**
 In the home page, there is a menu section. The menu section has been divided in three tabs, dishes, drinks and specials. when going to the menu section the dishes tab would appear and inside it all the dishes in the menu. And the same goes on for drinks and specials. By clicking each tab it's specific menu items would appear.
 <details>
 <summary>Click to see the menu tabs</summary>
@@ -141,60 +142,61 @@ In the home page, there is a menu section. The menu section has been divided in 
 ![Menu specials tab](static/readme_images/specials.PNG)
 </details>
 
-#### Reviews section
+#### **Reviews section**
 In the home page, there is a static reviews section, where the users could see other customers reviews. 
 ![Reviews](static/readme_images/reviews.PNG)
 
-#### Team memebers sections
+#### **Team memebers sections**
 In the home page, there is a team section so the users/customers would be able to have information about the people who will cook for them. 
 ![Team members section image](static/readme_images/team.PNG)
 
 
-#### Contact-us section
+#### **Contact-us section**
 In the home page, there is a contact section so the user could contact the restaurant using phone, email or fax. Also, there is map so the user could find the lcoation of the restaurant easily. It should be noted that this restaurnt is imaginary therfore, the map in contact section isn't correct address.
 ![Team members section image](static/readme_images/contact.PNG)
 
 
-#### Footer
+#### **Footer**
 The footer is the same in all the pages of this website and has been kept neat so the user doesn't get dizy when she reaches the end of the homepage. The footer consist of restaurant's social media accounts and a copyright sign. 
+
 ![Team members section image](static/readme_images/footer.PNG)
 
 </details>
 
 
-### Reservation
+### **Reservation**
 
 <details>
 <summary>Click to see this part</summary>
 
-#### Reserve a table
+#### **Reserve a table**
 The user can book a table in a specific time and date. There won't be double booking occuring as the email for each booking will be different. If the user enters same email an error will occur asking the user to re-enter anoter email. Furthermore, the maximum guests a user can reserve a table are 10. 
 If the user is not logged in, a message will appear asking her to go to login page to log in to be able make reservations.
 ![booking page image](static/readme_images/booking.PNG)
 
-#### User's bookings
+#### **User's bookings**
 The logged-in user can check her booking information, edit and delete it. If the user is not logged in, it will be redirected to sign in page. 
 ![bookings list page image](static/readme_images/bookingList.PNG)
 
-#### Edit booking
+#### **Edit booking**
 The logged-in user can edit her booking. This section has the same functionalities as when the user wants to reserve a table. Also, if the date of the booking has been expired, an error will appear when the user is editing the booking.
 ![edit booking page image](static/readme_images/editbooking.PNG)
 
-#### Delete booking
+#### **Delete booking**
 The logged-in user can delete her booking. However the user will be asked again if she wants to delete her booking then by cliking 'yes', it will be deleted, and by clicking 'no' the user will be redirected to the bookings list. 
 ![delete booking page image](static/readme_images/deletebooking.PNG)
 
 </details>
 
-### Authentication
+### **Authentication**
 
 <details>
 <summary>Click to see this part</summary>
 
-#### Sign up
+#### **Sign up**
 Users need to signup to be able to make reservations
 ![sign up page](static/readme_images/register.PNG)
-#### Login 
+#### **Login** 
 After signup the user doesn't need to enter her credentials again as it will be save, if the user ticks 'remmber me' button. 
 #### Reservation and My Bookings page
 These two pages are only available to the logged-in (registered) users. If a visiting user tries to open it a sign in page or message will appear asking them to sign in.
@@ -206,7 +208,7 @@ When unlogged-in user tries to open 'Reservartion page' or wants to book a table
 
 </details>
 
-### Future Features
+### **Future Features**
 - Implement email confirmation
 - Create a max limit capacity for the users to reserve a table for a day
 
@@ -221,17 +223,17 @@ The site has been build with a user friendly design and decent colors.
    - #000
 
 
-## The Skeleton Plane
+### **The Skeleton Plane**
  --- 
 ### Wireframes and Designs
 It is worth mention that throught this project the design of the website has been changed in respect to site owner's constant feedbacks. Therefore, the deployed project might be quite different from the first wireframe and desing.
 <details>
 <summary>Click to see wireframes</summary>
 
-Home page wireframe
+**Home page wireframe**
 ![homepage wireframe](static/readme_images/homepageWireframe.png)
 
-login and signup wireframes
+**login and signup wireframes**
 ![login and signup wireframes](static/readme_images/login_signup.png)
 
 </details>
@@ -239,14 +241,15 @@ login and signup wireframes
 <details>
 <summary>Click to see designs</summary>
 
-Home page Design
+**Home page Design**
 ![Home page](static/readme_images/home.png)
 
-reservation page
+**reservation page**
 ![reservation page](static/readme_images/reservationPage.png)
 
 </details>
 
+##### Back to [top](#table-of-contents)
 
 ### Database Design
  --- 
@@ -256,8 +259,8 @@ The database design has been created using Lucidchart. This has been created to 
 
 ##### Back to [top](#table-of-contents)
 
-## Testing
-### Code Validation
+## **Testing**
+### **Code Validation**
 [**HTML validation**](https://validator.w3.org/nu/) was done for index and base html pages: Some errors, warnings were found. Some of them were related to django urls, and some were related to Bootstrap. 
 <details>
 <summary>Click to see</summary>
@@ -288,6 +291,75 @@ The database design has been created using Lucidchart. This has been created to 
        
 [**Jshint Validation**](https://jshint.com/), in this validation the only error was a missing semicolon which was fixed immediately. 
 
+
+### **Test Cases**
+Some of test case for the website are provided below: 
+
+**Authentication**
+**User Story**: As a visiting user, I would like to sign up so I could become a registered user and be able to book a table, edit my booking and view it.
+
+**Expected result**: User should be able to fill the signup form and then will be directed to the home page of the website. 
+
+**Actual result**:  User is able to fill the signup form and then he is redirected to the home page of the website. 
+
+---
+
+**User Story**: As a registered user, I want to log in with my email and password so that the system can authenticate me and I can book a table or view and edit my bookings.
+
+**Expected result**: register user could login it with her email and password.
+
+**Actual result**: register user can login it with her email and password.
+
+---
+
+**User Story**: As registered user I could log out. 
+
+**Expected result**: before logging out, user should be reconfirmed of her decisions.  
+
+**Actual result**: when user logs out, she will be asked if she wants to logout. 
+
+----
+
+**Registered User CRUD functionality**
+
+**User Story**: As a registered user, I would like to check my booking.
+
+**Expected result**: User could check her all bookings.
+
+**Actual result**:  User can check her all bookings.
+
+**Description**: User can go to the website homepage -> menu -> My Bookings then can see all her bookings. (Login is required)
+
+---
+
+**User Story**: As a registered user, I would like to edit my booking.
+
+**Expected result**: User could edit her bookings and save it. After that redirected to her bookings list. 
+
+**Actual result**:  User can  edit her bookings and save it. Then was redirected to her bookings list. 
+
+**Description**: User can go to the website homepage -> menu -> My Bookings -> edit option to edit her bookings. (Login is required)
+
+---
+
+**User Story**: As a registered user, I would like to cancel my booking.
+
+**Expected result**: User could cancel her bookings.
+
+**Actual result**:  User can cancel her bookings.
+
+**Description**: User can go to the website homepage -> menu -> My Bookings -> cancel option to cancel her bookings.
+
+---
+**User Story**: As a registered user, I would like to select particular date and time for my booking..
+
+**Expected result**: when booking a table the user could set a specific time and date. 
+
+**Actual result**:  user can set a specific time and date when booking a table. 
+
+
+
+
 ##### Back to [top](#table-of-contents)
 
 ### **Bugs**😶
@@ -297,7 +369,7 @@ The database design has been created using Lucidchart. This has been created to 
 - Error🥴 When deploying the website in heroku, there was an H10 error 'app crashed' 
 solution: The Procfile needed to point to the name of the base Django app - that'll be the name of the folder containing the [settings.py](http://settings.py/)
 
-- Erorr🤯 ValueError at /reserve_table/ The view reservation.views.reserve_table didn't return an HttpResponse object. It returned None instead. 
+- Erorr🤯 `ValueError at /reserve_table/ The view reservation.views.reserve_table didn't return an HttpResponse object. It returned None instead.`
 solution: didn’t add a return at the end of function
 
 - Error🤕 `Reverse for 'home' not found. 'home' is not a valid view function or pattern name.`
@@ -307,10 +379,10 @@ Solution:Added the correct url
 - Error😱 `'str' object has no attribute 'get'`  when trying reserve a table (Submit button click)
 Solution: in views added post request
 
-- Error😭 NoReverseMatch at /myBooking_list/ Reverse for 'update_bookings' not found. 'update_bookings' is not a valid view function or pattern name.
+- Error😭 `NoReverseMatch at /myBooking_list/ Reverse for update_bookings not found. update_bookings is not a valid view function or pattern name.`
 Solution: change url in template from {% url ‘update_bookings’ %} to “/update_booking/”
 
-- Error🤔 NoReverseMatch at /myBooking_list/ Reverse for 'update_booking' not found. 'update_booking' is not a valid view function or pattern name.
+- Error🤔 `NoReverseMatch at /myBooking_list/ Reverse for 'update_booking' not found. 'update_booking' is not a valid view function or pattern name.`
 solution: very simple and infront of my eyes, spelling mistake in the url which as “update_bookings”
 
 - bug🥱  The footer wasn't at the bottm 
@@ -319,7 +391,7 @@ solve: Added fixed-bottom in footer class
 - bug😩 **[allauth urls are not accessible - 404 error](https://stackoverflow.com/questions/67799124/allauth-urls-are-not-accessible-404-error)**
     - solution: signed out from the admin page, the problem disappeared
 
-- bug🤐 "GET /accounts/logout/ HTTP/1.1" 200 0
+- bug🤐 `"GET /accounts/logout/ HTTP/1.1" 200 0`
     - solution: logout.html didn’t have content
 
 
@@ -350,7 +422,7 @@ This website is compatible and user friendly with all screens size and different
 - ElephantSQL
 - Cloudinary
 - Heroku 
-- (website responsive](https://techsini.com/multi-mockup/index.php)
+- [website responsive](https://techsini.com/multi-mockup/index.php)
 
 ### **Deployment**
  --- 

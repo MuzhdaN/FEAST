@@ -102,16 +102,16 @@ video {
 
 /* contact us section */
 #contact-us {
-  background: rgba(198, 76, 58, 0.72);
-  margin: 2rem;
+  background: #e47968;
+  margin: 1rem;
 }
 
 .contact-content {
   width: 423px;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 18px;
 }
 
 /* Review section */

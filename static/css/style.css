@@ -116,11 +116,11 @@ video {
 
 /* Review section */
 #review {
-  background-image: url("../images/bg2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   margin-top: 3rem;
   height: 450px;
+  background: linear-gradient(90deg, rgba(228,121,104,1) 0%,
+            rgba(228,54,27,0.9054972330729166) 32%, 
+            rgba(240,144,130,1) 89%, rgba(241,220,220,1) 99%);
 }
 
 /* sign in / sign up design  */

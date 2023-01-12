@@ -11,11 +11,11 @@ from reservation.models import Table
 # Create your views here.
 def reserve_table(request):
     '''
-    this function will show reservation form 
+    this function will show reservation form
     if the user is registered and then will save it.
     for unregistered user, a message will be shown for sign in
     '''
-    form = bookingForm() 
+    form = bookingForm()
     if request.method == 'POST':
         form = bookingForm(request.POST)
         if form.is_valid():
@@ -23,7 +23,7 @@ def reserve_table(request):
             form.save()
             form = bookingForm()
             messages.success(request, "Booking succesful")
-            return redirect('/myBooking_list')      
+            return redirect('/myBooking_list')
         else:
             form = bookingForm()
             return render(request, 'reservation/reservation.html', {'form': form})
@@ -34,8 +34,8 @@ def reserve_table(request):
 @login_required
 def myBooking_list(request):
     '''
-    This function will show the reservation of the 
-    currently logged-in user if she is logged in 
+    This function will show the reservation of the
+    currently logged-in user if she is logged in
     otherwise sign-in page will be shown
     '''
     # if request.user.is_authenticated:
@@ -49,15 +49,15 @@ def updateBookings(request, booking_id):
     this function will edit/update the bookings of the user
     '''
     edit = Table.objects.get(id=booking_id)
-    form = bookingForm(instance=edit)   
+    form = bookingForm(instance=edit)
     if request.method == 'POST':
         form = bookingForm(request.POST, instance=edit)
         if form.is_valid():
             form.save()
-            form = bookingForm()   
-            return redirect('/myBooking_list') 
+            form = bookingForm()
+            return redirect('/myBooking_list')
             messages.success(request, "Booking succesful")
-    return render(request, "reservation/edit_booking.html", {'form': form}) 
+    return render(request, "reservation/edit_booking.html", {'form': form})
 
 
 def deleteBooking(request, booking_id):
@@ -70,5 +70,4 @@ def deleteBooking(request, booking_id):
     if request.method == "POST":
         booking.delete()
         return redirect('/myBooking_list')
-   
-    return render(request, "reservation/delete_booking.html", {'booking': booking}) 
+    return render(request, "reservation/delete_booking.html", {'booking': booking})

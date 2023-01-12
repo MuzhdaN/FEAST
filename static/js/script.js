@@ -6,7 +6,7 @@
         navScroll.classList.add('nav-scrolled');
       }
       else if (window.scrollY <= 370) {
-        navScroll.classList.remove('nav-scrolled')
+        navScroll.classList.remove('nav-scrolled');
       }
     });
 

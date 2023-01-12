@@ -5,7 +5,7 @@ Feast is the name of the restaurant for an online booking system. Using this web
 
  
  
-Visit the live website [in here](https://snowman-game-pp3.herokuapp.com/)
+Visit the live website [in here](https://restaurant-booking-system.herokuapp.com/)
  ![responsive Design Layouts](images/am-i-responsive-game.PNG)
 
 ## Table of Contents
@@ -291,13 +291,13 @@ solve: Added fixed-bottom in footer class
 - Cloudinary
 - Heroku 
 
-## Cridets
+## Credits
 
+- <a href="https://www.pexels.com/" target="_blank">Images taken from Pexels website</a>
 - <a href="https://www.w3schools.com/html/html_favicon.asp#:~:text=" target="_blank">Fav Icon code</a>
 - <a href="https://www.flaticon.com/search?word=food" target="_blank">Fav Icon Image</a>
 - <a href="https://github.com/django-crispy-forms/crispy-bootstrap5" target="_blank">crispy-bootstrap5</a>
 - <a href="https://docs.djangoproject.com/en/4.1/topics/forms/" target="_blank">Django Forms</a>
 - <a href="https://stackoverflow.com/questions/3743222/how-do-i-convert-a-datetime-to-date" target="_blank">datetime valdiation to remove past dates</a>
 - <a href="https://stackoverflow.com/questions/849142/how-to-limit-the-maximum-value-of-a-numeric-field-in-a-django-model" target="_blank">To limit maximum value of an integer</a>
-- <a herf="https://pythonguides.com/django-form-validation/">
-validation of form </a>
+- <a herf="https://pythonguides.com/django-form-validation/">validation of form </a>

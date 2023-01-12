@@ -66,9 +66,9 @@
               <a class="text-decoration-none text-white" href="{% url 'account_logout' %}">Logout</a>
           </button>
           {% else %}
-          <button type="button" id="btn-outline-ardent" class="mx-1 btn btn-outline-dark">
+          <button type="button" class="mx-1 btn btn-outline-dark">
             <a class="text-decoration-none text-white" href="{% url 'account_login' %}"> Login</a> </button>
-          <button type="button" id="btn-outline-ardent" class="btn btn-outline-dark">
+          <button type="button" class="btn btn-outline-dark">
             <a class="text-decoration-none text-white" href="{% url 'account_signup' %}">Register</a> </button>
           {% endif %}
         </div>
